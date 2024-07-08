@@ -23,7 +23,7 @@
 
 ## About The Project
 
-![Captura de pantalla 2024-07-08 013201](https://github.com/Retrofiyer/LoginJs/assets/90810854/79f2230f-c41d-4cef-bcb8-2c4e28667738)
+![Captura de pantalla 2024-07-08 121340](https://github.com/Retrofiyer/PetPhobia/assets/90810854/ad978a6d-714c-4fc1-a009-8467cc6199f6)
 
 This project is focused to help people who have pet phobia with a professional follow up to help them and show them that both cats and dogs are harmless as well as being a good companion.
 
