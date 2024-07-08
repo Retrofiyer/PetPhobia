@@ -55,7 +55,7 @@ To start running this project we will perform the following steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Retrofiyer/LoginJs.git
+   git clone https://github.com/Retrofiyer/PetPhobia.git
    ```
 2. Install NPM packages
    ```sh
