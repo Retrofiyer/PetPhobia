@@ -20,6 +20,14 @@
   </ol>
 </details>
 
+<div>
+    <h1>Simple Login</h1>
+    <p>Group Integrates:</p>
+    <ul>
+        <li>Edwin Allauca</li>
+        <li>Sebastián Carrera</li>
+    </ul>
+</div>
 
 ## About The Project
 
