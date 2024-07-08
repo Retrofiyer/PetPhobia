@@ -21,7 +21,7 @@
 </details>
 
 <div>
-    <h1>Pet Phobie</h1>
+    <h1>Pet Phobia</h1>
     <p>Group Integrates:</p>
     <ul>
         <li>Edwin Allauca</li>
