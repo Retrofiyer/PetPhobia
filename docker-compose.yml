@@ -5,21 +5,39 @@ services:
     image: retroandre/catmicroservice:latest
     ports:
       - "3001:3001"
+    volumes:
+      - ./CatMicroservice:/app
+      - /app/node_modules
+    env_file:
+      - ./CatMicroservice/.env
 
   dogmicroservice: 
     image: retroandre/catmicroservice:latest
     ports:
       - "3002:3002"
+    volumes:
+      - ./DogMicroservice:/app
+      - /app/node_modules
+    env_file:
+      - ./DogMicroservice/.env
 
   loginmicroservice:
     image: retroandre/loginmicroservice:latest
     ports:
       - "3003:3003"
+    volumes:
+      - ./LoginMicroservice:/app
+      - /app/node_modules
+    env_file:
+      - ./LoginMicroservice/.env
 
   frontend:
     image: retroandre/frontend:latest
     ports:
       - "8080:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
     depends_on:
       - catmicroservice
       - dogmicroservice
