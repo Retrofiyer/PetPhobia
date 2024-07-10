@@ -2,9 +2,7 @@ version: '3.8'
 
 services:
   catmicroservice:
-    build: 
-      context: ./CatMicroservice
-      dockerfile: Dockerfile
+    image: retroandre/catmicroservice:latest
     ports:
       - "3001:3001"
     volumes:
@@ -14,10 +12,8 @@ services:
       - ./CatMicroservice/.env
     command: npm start
 
-  dogmicroservice:
-    build: 
-      context: ./DogMicroservice
-      dockerfile: Dockerfile
+  dogmicroservice: 
+    image: retroandre/catmicroservice:latest
     ports:
       - "3002:3002"
     volumes:
@@ -28,9 +24,7 @@ services:
     command: npm start
 
   loginmicroservice:
-    build: 
-      context: ./LoginMicroservice
-      dockerfile: Dockerfile
+    image: retroandre/loginmicroservice:latest
     ports:
       - "3003:3003"
     volumes:
@@ -42,8 +36,7 @@ services:
 
   frontend:
     build:
-      context: .
-      dockerfile: Dockerfile
+    image: retroandre/frontend:latest
     ports:
       - "8080:3000"
     volumes:
