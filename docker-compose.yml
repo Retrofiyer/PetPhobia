@@ -28,8 +28,6 @@ services:
     volumes:
       - ./LoginMicroservice:/app
       - /app/node_modules
-    env_file:
-      - ./LoginMicroservice/.env
 
   frontend:
     image: retroandre/frontend:latest
