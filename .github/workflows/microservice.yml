@@ -1,13 +1,12 @@
-name: Push DockerHub
+name: Deploy AWS
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
-    needs: setup
     runs-on: ubuntu-latest
 
     steps:
@@ -21,13 +20,11 @@ jobs:
 
       - name: Copy files to EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@${{ secrets.EC2_HOST }} "mkdir -p /home/ubuntu/microservice/ && sudo chown ubuntu:ubuntu /home/ubuntu/microservice/"
-          scp -r -o StrictHostKeyChecking=no ./* ubuntu@${{ secrets.EC2_HOST }}:/home/ubuntu/microservice/
-
+          scp -r -o StrictHostKeyChecking=no ./* ubuntu@${{ secrets.EC2_HOST }}:/home/ubuntu/store-microservices/
       - name: SSH into EC2 and deploy
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@${{ secrets.EC2_HOST }} << 'EOF'
-          cd /home/ubuntu/microservice/
+          cd /home/ubuntu/store-microservices/
           docker-compose down
           docker-compose pull
           docker-compose up -d
