@@ -1,8 +1,8 @@
 const express = require('express');
-const { getDogs } = require('../controllers/dogController');
+const { getCats } = require('../controller/catController');
 
 const router = express.Router();
 
-router.get('/', getDogs);
+router.get('/', getCats);
 
 module.exports = router;

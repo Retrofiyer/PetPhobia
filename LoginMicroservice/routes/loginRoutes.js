@@ -1,8 +1,8 @@
 const express = require('express');
-const { getCats } = require('../controllers/catController');
+const { login } = require('../controller/loginController');
 
 const router = express.Router();
 
-router.get('/', getCats);
+router.post('/', login);
 
 module.exports = router;
