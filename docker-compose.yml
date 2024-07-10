@@ -5,17 +5,11 @@ services:
     image: retroandre/catmicroservice:latest
     ports:
       - "3001:3001"
-    env_file:
-      - CAT_API_KEY=live_yAMZk2uGCRkSExe8sb7Oq1g8DLjDc189wXfvsYU3hkXSManpyPmQIEXfRBjQyoho
-      - CAT_API_URL=https://api.thecatapi.com/v1/images/search
 
   dogmicroservice: 
     image: retroandre/catmicroservice:latest
     ports:
       - "3002:3002"
-    env_file:
-      - DOG_API_KEY=live_7c8XPAvbTdDx9ME16ig3XBFO38W21Tc0QEBNwIM3pTXQrBSuTviptGpHsJCb2Rvt
-      - DOG_API_URL=https://api.thedogapi.com/v1/images/search
 
   loginmicroservice:
     image: retroandre/loginmicroservice:latest
