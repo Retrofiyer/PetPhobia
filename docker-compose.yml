@@ -5,43 +5,27 @@ services:
     image: retroandre/catmicroservice:latest
     ports:
       - "3001:3001"
-    volumes:
-      - ./CatMicroservice:/app
-      - /app/node_modules
     env_file:
-      - ./CatMicroservice/.env
-    command: npm start
+      - CAT_API_KEY=live_yAMZk2uGCRkSExe8sb7Oq1g8DLjDc189wXfvsYU3hkXSManpyPmQIEXfRBjQyoho
+      - CAT_API_URL=https://api.thecatapi.com/v1/images/search
 
   dogmicroservice: 
     image: retroandre/catmicroservice:latest
     ports:
       - "3002:3002"
-    volumes:
-      - ./DogMicroservice:/app
-      - /app/node_modules
     env_file:
-      - ./DogMicroservice/.env
-    command: npm start
+      - DOG_API_KEY=live_7c8XPAvbTdDx9ME16ig3XBFO38W21Tc0QEBNwIM3pTXQrBSuTviptGpHsJCb2Rvt
+      - DOG_API_URL=https://api.thedogapi.com/v1/images/search
 
   loginmicroservice:
     image: retroandre/loginmicroservice:latest
     ports:
       - "3003:3003"
-    volumes:
-      - ./LoginMicroservice:/app
-      - /app/node_modules
-    env_file:
-      - ./LoginMicroservice/.env
-    command: npm start
 
   frontend:
-    build:
     image: retroandre/frontend:latest
     ports:
       - "8080:3000"
-    volumes:
-      - .:/app
-      - /app/node_modules
     depends_on:
       - catmicroservice
       - dogmicroservice
