@@ -24,7 +24,7 @@ jobs:
       - name: SSH into EC2 and deploy
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@${{ secrets.EC2_HOST }} << 'EOF'
-          cd /home/ubuntu/store-microservices/
+          cd /home/ubuntu/microservice/
           docker-compose down
           docker-compose pull
           docker-compose up -d
