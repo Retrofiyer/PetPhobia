@@ -45,7 +45,10 @@ Project focused:
 
 - [![NodeJs][node.js]][node-url]
 - [![Bootstrap][bootstrap.com]][bootstrap-url]
-
+- [![HTML][html.com]][html-url]
+- [![CSS][css.com]][css-url]
+- [![Docker][docker.com]][docker-url]
+- [![AWS][aws.com]][aws-url]
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -86,5 +89,13 @@ To start running this project we will perform the following steps.
 <!-- LINKS & IMAGES -->
 [node.js]: https://img.shields.io/badge/Node.js-black?style=for-the-badge&logo=node.js&logoColor=white
 [node-url]: https://nodejs.org/
+[html.com]: https://img.shields.io/badge/HTML-black?style=for-the-badge&logo=html5&logoColor=white
+[html-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[css.com]: https://img.shields.io/badge/CSS-black?style=for-the-badge&logo=css3&logoColor=white
+[css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [bootstrap.com]: https://img.shields.io/badge/Bootstrap-black?style=for-the-badge&logo=bootstrap&logoColor=white
 [bootstrap-url]: https://getbootstrap.com/
+[docker.com]: https://img.shields.io/badge/Docker-black?style=for-the-badge&logo=docker&logoColor=white
+[docker-url]: https://www.docker.com/
+[aws.com]: https://img.shields.io/badge/AWS-black?style=for-the-badge&logo=amazon-aws&logoColor=white
+[aws-url]: https://aws.amazon.com/
