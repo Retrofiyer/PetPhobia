@@ -28,7 +28,7 @@ jobs:
           context: ./CatMicroservice
           file: ./CatMicroservice/Dockerfile
           push: true
-          tags: tuusuario/catmicroservice:latest
+          tags: retroandre/catmicroservice:latest
 
       - name: Build and push DogMicroservice
         uses: docker/build-push-action@v3
@@ -36,7 +36,7 @@ jobs:
           context: ./DogMicroservice
           file: ./DogMicroservice/Dockerfile
           push: true
-          tags: tuusuario/dogmicroservice:latest
+          tags: retroandre/dogmicroservice:latest
 
       - name: Build and push LoginMicroservice
         uses: docker/build-push-action@v3
@@ -44,7 +44,7 @@ jobs:
           context: ./LoginMicroservice
           file: ./LoginMicroservice/Dockerfile
           push: true
-          tags: tuusuario/loginmicroservice:latest
+          tags: retroandre/loginmicroservice:latest
 
       - name: Build and push Frontend
         uses: docker/build-push-action@v3
@@ -52,4 +52,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: tuusuario/frontend:latest
+          tags: retroandre/frontend:latest
